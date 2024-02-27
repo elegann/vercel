@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Honk&family=Kanit:wght@600&family=Outfit:wght@700&family=Protest+Strike&family=Sixtyfour&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Carter One', system-ui;
+  text-decoration: none;
+}
+html,body{
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+.nav{
+  background-color: navy;
+  padding: 10px;
+  text-align: center;
+}
+.nav a{
+  color: white;
+  padding: 10px 20px;
+  margin: 0 5px;
+  display: inline-block;
+}
+.nav a:hover{
+  background-color: black;
+}
+.heading{
+  font-size: 60px;
+  color: white;
+  margin-right: 300px;
+}
+.heading1{
+  font-size: 50px;
+  color: white;
+  margin-right: 300px;
+}
+.img img{
+  float: right;
+  margin-left: 300px;
+ margin-right: 300px;
+ height: 20%;
+ width: 20%;
+}
+/* .img1 img{
+  float: right;
+  height: 30%;
+  width: 20%;
+} */
+.heading3{
+  font-size: 25px;
+  color: white;
+}
+.button button{
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+  border-radius: 100px;
+  background-color:  blue;
+  color: white;
+  cursor: pointer;
+}
+.cantact-container{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.right-container{
+  height: 30px;
+border-image-width: 30px;
+}
+.cantact-left{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.cantact-left-title h2{
+  font-weight: 600;
+  color: blue;
+  font-size: 40px;
+}
+.cantact-left-title hr{
+  border: none;
+  width: 120px;
+  height: 5px;
+  background-color: blue;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.contact-inputs{
+  width: 400px;
+  height: 50px;
+  border: none;
+  outline: none;
+  padding-left: 20px;
+  font-weight: 500;
+  color: #666;
+  border-radius: 50px;
+}
+.cantact-left textarea{
+  height: 140px;
+  padding-top: 15px;
+  border-radius: 20px;
+}
+.contact-inputs:focus{
+  border: 2px solid #ff9945;
+}
+.contact-inputs::placeholder{
+  color: #a9a9a9;
+}
+.cantact-left button{
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+  border-radius: 50px;
+  background-color:  blue;
+  color: white;
+  cursor: pointer;
+}
+.cantact-left button:hover{
+  background-color: white;
+  color: black;
+}
+.button button:hover{
+  background-color: white;
+  color: black;
+}
+.cantact-left button:focus{
+  background-color: #ff9945;
+}
+@media (max-width:800px){
+  .contact-inputs{
+      height: 800vh;
+  }
+  .cantact-right{
+      display: none;
+  }
+}
+ .hire-me{
+  color: white;
+  font-size: 25px;
+}
+/* .hire-mee{
+  color: white;
+  font-size: 50px;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/e/e7/Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg");
+} */ 
+.buttonn button{
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+  border-radius: 50px;
+  background-color:  blue;
+  color: black;
+  cursor: pointer;
+}
+.buttonn button:hover{
+  background-color: white;
+  color: black;
+}
+.heading3 a{
+  color: blue;
+}
+.boxing-size{
+  color: white;
+  background-color: blue;
+}
+ /* .icons1 img{
+  height: 5%;
+  width: 5%;
+}
+.icons2 img{
+  height: 5%;
+  width: 5%;
+}
+.icons3 img{
+  height: 5%;
+  width: 7%;
+} */
+/* .social-media-container {
+  display: flex;
+  gap: 10px;
+}
+
+.social-media-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #3498db;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+} */
+.social-media-container {
+  display: flex;
+  gap: 10px;
+}
+
+.social-media-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #3498db;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.facebook-icon {
+  background-color: #3b5998; /* Facebook blue */
+}
+
+.linkedin-icon {
+  background-color: #0077b5; /* LinkedIn blue */
+}
+page.tsx
+const Page = () => {
+  return <section> <div className="nav"> <nav>
+ <li>
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">Project</a>
+  <a href="#">Service</a>
+ </li>
+    </nav> 
+    </div>
+    <br />
+<br />
+<br />
+<br />
+
+    <div className="img">
+    <center>
+    <img src="https://abubakaraiwala.netlify.app/abzworld.png" alt="" />
+    </center>
+    </div>
+    <center>
+    <div className="heading">
+      <h1>HI, I'am </h1>
+    </div>
+    <div className="heading1">
+      <h1>Abu Bakar</h1>
+    </div>
+    <div className="button">
+    <button>Hire Me</button> 
+    </div>
+    </center>
+    <center>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <center>
+        <br />
+      <div className="img1">
+        <img src="" alt="" />
+      </div>
+      </center>
+      <div className="heading3">
+        <h1>About Me</h1>
+        <br />
+       <p>Hi I'am Abu Bakar and I'am student of techno kids and I'have learned HTML or CSS and I'am teaching HTML OR CSS on my You Tube channel <a href="@Techabz0"> Tech ABZ</a> and My hobbie is Cricket and Football or Programming and my I am 9 years old Kid I work on Laptop and my group name is Web With HTML or CSS Join now and <a href="#">Explore The Web And App Development</a> ✨✨✨🎉🎉🎉✨✨✨🎇🎇🎇</p>
+      </div>
+  
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <div className="cantact-container">
+        <form action="https://api.web3forms.com/submit" method="POST" className="cantact-left">
+            <div className="cantact-left-title">
+                <h2>Contact Me</h2>
+                <hr />
+            </div>
+            <input type="hidden" name="access_key" value="3e853f8b-41b3-4feb-a2a7-795011710444"></input>
+            <input type="text" name="name" placeholder="Your Name" className="contact-inputs" required></input>
+            <input type="email" name="email" placeholder="Your Email" className="contact-inputs" required></input>
+            <textarea name="Messege" placeholder="Your Messege" className="contact-inputs" required ></textarea>
+            <button type="submit">Submit <img src="ABZ" alt=""></img></button>
+        </form>
+    </div>
+    <div className="hire-me">
+      <p>Hire-Me As a Developer</p>
+    </div>
+    <div className="right-container">
+        <img src="ABZ/download.jpg" alt=""></img>
+    </div>
+
+ <div className="social-media-container">
+        <a target="_blank" href="https://www.facebook.com/profile.php?id=100095211904951" className="social-media-icon facebook-icon">Facebook</a>
+        <a target="_blank" href="https://www.linkedin.com/in/zohaib-abu-bakar-b462b129b/" className="social-media-icon linkedin-icon">Linkedin</a>
+        </div>
+   <p className="boxing-size">© 2024 My Portfolio. All rights reserved.</p>
+   
+</center>
+    </section>
+    }
+export default Page
+layout.tsx
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import "./globals.css";
+
+const inter = Inter({ subsets: ["latin"] });
+
+export const metadata: Metadata = {
+  title: "Abu Bakar",
+  description: "Generated by create next app",
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="en">
+      <body className={inter.className}>{children}</body>
+    </html>
+  );
+}
